@@ -14,6 +14,9 @@ public class SecondActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private Button logout;
     private Button MyGoals;
+    private Button SetHomeCourse;
+    private Button ViewHandicap;
+
 
 
 
@@ -24,8 +27,11 @@ public class SecondActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        logout = (Button)findViewById(R.id.Logoutbtn);
+        logout = (Button) findViewById(R.id.Logoutbtn);
         MyGoals = (Button) findViewById(R.id.MyGoalsbtn);
+        SetHomeCourse = (Button) findViewById(R.id.SetHomeCoursebtn);
+        ViewHandicap = (Button) findViewById(R.id.ViewHandicapbtn);
+
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +41,23 @@ public class SecondActivity extends AppCompatActivity {
                 startActivity(new Intent(SecondActivity.this, MainActivity.class));
             }
         });
+
+        SetHomeCourse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SecondActivity.this, SetHomeCourse.class));
+            }
+        });
+
+        ViewHandicap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SecondActivity.this, ViewHandicap.class));
+
+            }
+        });
+
+
 
         MyGoals.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,4 +70,8 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = new Intent(this, GoalsActivity.class);
         startActivity(intent);
     }
+
+
+
+
 }

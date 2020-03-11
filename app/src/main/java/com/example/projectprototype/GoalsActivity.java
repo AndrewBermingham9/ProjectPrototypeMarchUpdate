@@ -9,6 +9,8 @@ import android.widget.Button;
 
 public class GoalsActivity extends AppCompatActivity {
     private Button NewGoals;
+    private Button CurrentGoals;
+    private Button CourseTipsbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +18,15 @@ public class GoalsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_goals);
 
         NewGoals = (Button) findViewById(R.id.NewGoalsbtn);
+        CurrentGoals = (Button) findViewById(R.id.CurrentGoalsbtn);
+        CourseTipsbtn = (Button)  findViewById(R.id.CourseTipsbtn);
+
+        CurrentGoals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCurrentGoals();
+            }
+        });
 
         NewGoals.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,10 +34,30 @@ public class GoalsActivity extends AppCompatActivity {
                 openNewGoals();
             }
         });
+
+        CourseTipsbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCourseTips();
+            }
+        });
     }
+
+
+
 
     public void openNewGoals(){
         Intent intent = new Intent(this, NewGoals.class);
+        startActivity(intent);
+    }
+
+    public void openCurrentGoals(){
+        Intent intent = new Intent(this, CurrentGoals.class);
+        startActivity(intent);
+    }
+
+    public void openCourseTips(){
+        Intent intent = new Intent (this, CourseTips.class);
         startActivity(intent);
     }
 }
