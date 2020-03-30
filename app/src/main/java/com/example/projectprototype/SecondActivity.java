@@ -16,6 +16,8 @@ public class SecondActivity extends AppCompatActivity {
     private Button MyGoals;
     private Button SetHomeCourse;
     private Button ViewHandicap;
+    private Button CourseOverview;
+    private Button UploadScore;
 
 
 
@@ -31,6 +33,8 @@ public class SecondActivity extends AppCompatActivity {
         MyGoals = (Button) findViewById(R.id.MyGoalsbtn);
         SetHomeCourse = (Button) findViewById(R.id.SetHomeCoursebtn);
         ViewHandicap = (Button) findViewById(R.id.ViewHandicapbtn);
+        CourseOverview = (Button)findViewById(R.id.CourseOverviewbtn);
+        UploadScore = (Button) findViewById(R.id.UploadScorebtn) ;
 
 
         logout.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +46,15 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
+        UploadScore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SecondActivity.this, UploadScore.class));
+
+            }
+        });
+
+
         SetHomeCourse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +62,12 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
+        CourseOverview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SecondActivity.this, CourseOverview.class));
+            }
+        });
         ViewHandicap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
