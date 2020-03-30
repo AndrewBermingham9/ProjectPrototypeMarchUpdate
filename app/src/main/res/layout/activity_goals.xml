@@ -13,18 +13,43 @@
         android:text="New Goals"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252" />
+        app:layout_constraintVertical_bias="0.337" />
 
     <TextView
         android:id="@+id/MyGoalstv"
-        android:layout_width="154dp"
-        android:layout_height="37dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
         android:text="My Goals"
         android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewGoalsbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <Button
+        android:id="@+id/CurrentGoalsbtn"
+        android:layout_width="175dp"
+        android:layout_height="70dp"
+        android:text="Current Goals"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewGoalsbtn"
+        app:layout_constraintVertical_bias="0.308" />
+
+    <Button
+        android:id="@+id/CourseTipsbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Tips to improve your game!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentGoalsbtn"
+        app:layout_constraintVertical_bias="0.447" />
 </androidx.constraintlayout.widget.ConstraintLayout>

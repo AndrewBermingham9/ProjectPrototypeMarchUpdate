@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#B5E61D"
+    android:orientation="vertical"
+    tools:context=".EnterScoreHole1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/scoretext"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="328dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp"
+        android:text="Hole 1: Patridge Hollow, Par 4 "
+        android:textSize="20sp" />
+
+
+
+    <Button
+        android:id="@+id/choice1"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:text="Eagle: 2"
+        android:textColor="#090909" />
+
+    <Button
+        android:id="@+id/choice2"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:text="Birdie: 3"
+        android:textColor="#090909" />
+
+    <Button
+        android:id="@+id/choice3"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:text="Par: 4"
+        android:textColor="#090909" />
+
+    <Button
+        android:id="@+id/choice4"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:text="Bogey: 5"
+        android:textColor="#090909" />
+
+    <Button
+        android:id="@+id/choice5"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:text="Double Bogey: 6"
+        android:textColor="#090909" />
+
+    <Button
+        android:id="@+id/choice6"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:text="Triple or worse: 7+"
+        android:textColor="#090909" />
+
+    <Button
+        android:id="@+id/BackBtn"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:background="#090909"
+        android:padding="8dp"
+        android:text="Back to Home Page"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>
